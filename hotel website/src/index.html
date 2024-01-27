@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- link google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- link font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- link JSWrapper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+
+  <title>Hotel</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h3>Hotel Indah</h3>
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+        </div>
+   
+        <section>
+
+          <div class="home" id="home">
+            <div class="row">
+              <div class="left">
+                <h1>Indah Hotel</h1>
+                <!-- <h1>Hotel</h1> -->
+                <p>Temukan Pengalaman Berbeda dengan Pelayanan yang cukup menarik</p>
+                <p>Indah Hotel adalah destinasi penginapan yang mewah dan nyaman, terletak strategis di pusat kota, menawarkan pengalaman menginap yang tak terlupakan. Dengan arsitektur modern yang elegan dan layanan berkualitas tinggi, Indah Hotel memadukan kemewahan dengan kenyamanan untuk memenuhi kebutuhan tamu yang paling eksklusif.</p>
+                <button class="look-service"><a href="#service">Lihat Pelayanan <span><i class="fa-solid fa-hotel"></i></span></a></button>
+                   <div class="info">
+                       <div class="lokasi">
+                              <p>Lokasi</p>
+                              <h4>Medan</h4>
+                       </div>
+                       <div class="type">
+                              <p>Type</p>
+                              <h4>Luxury</h4>
+                       </div>
+                       <div class="harga">
+                             <p>Kisaran Harga</p>
+                             <h4>300k-500k</h4>
+                       </div>
+                       
+                   </div>
+              </div>
+              <div class="right">
+                <div class="picture">
+                  <img src="../component/kamarHotel.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="specific">
+                <div class="box">
+                    <span><i class="fa-solid fa-bed fa-3x"></i></span>
+                    <div id="counter" class="counter">600</div>
+                    <p>Kamar</p>
+                </div>
+                <div class="box">
+                    <span><i class="fa-solid fa-person fa-3x"></i></span>
+                    <div id="counter" class="counter">1000</div>
+                    <p>Pengunjung/hari</p>
+                </div>
+                <div class="box">
+                    <span><i class="fa-solid fa-bowl-food fa-3x"></i></span>
+                    <div id="counter" class="counter">30</div>
+                    <p>Cafe</p>
+                </div>
+                <div class="box">
+                    <span><i class="fa-solid fa-masks-theater fa-3x"></i></span>
+                    <div id="counter" class="counter">350</div>
+                    <p>Hiburan</p>
+                </div>
+               
+          </div>
+
+        </section>
+
+        <section>
+          <div class="about">
+               <div class="row">
+           
+                   <div class="card-gambar">
+                    <img class="gambar" src="../component/hotel2.jpg" alt="">
+                   </div>
+                   <div class="card-information">
+                    <h5>Hal Menarik di Indah Hotel</h5>
+                    <p>
+                      Sebuah hotel yang menarik dapat menawarkan berbagai fitur dan pengalaman yang membuatnya unik dan memikat para tamu. Berikut adalah beberapa deskripsi mengenai hal-hal menarik yang dapat dimiliki oleh sebuah hotel , hotel adalah rumah yang nyaman saat memiliki banyak uang , berikut kelebihan kami
+                    </p>
+                    <div class="paragraph">
+                      <ul>
+                        <li><span><i class="fa-solid fa-check"></i></span>Bersih dan Rapi</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Harga Terjangkau</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Lokasi Strategis</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Fasilitas Lengkap</li>
+                        <li><span><i class="fa-solid fa-check"></i></span>Keamanan Terjamin</li>
+                     
+                      </ul>
+                    </div>
+                  
+                   </div>
+               </div>
+          </div>
+        </section>
+
+
+        <section>
+    
+            <div class="product" id="service">
+             
+                 <div class="row">
+                    <div class="kiri">
+                        <div class="tombol">
+                          <button class="kiri-btn"> <span><i class="fa-solid fa-arrow-left"></i></span></button>
+                          <button class="kanan-btn"> <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+                        
+                        <div class="swiper-container">
+                          <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                      <div class="card">
+                                 
+                                          <div class="image">
+                                            <img src="../component/kamar1.jpg" alt="">
+                                          </div>
+                                          <div class="tentang">
+                                             <h4>Sauna</h4>
+                                             <div class="desc">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                            </div>
+                                            <h4>Rp.500.000/day</h4>
+                                         </div>
+                                          
+                                      </div>
+                                  </div>
+
+                                  <div class="swiper-slide">
+                                    <div class="card">
+                                    
+                                      <div class="image">
+                                        <img src="../component/kamar2.jpg" alt="">
+                                      </div>
+                                      <div class="tentang">
+                                        <h4>Launa</h4>
+                                        <div class="desc">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                        </div>
+                                       <h4>Rp.520.000/day</h4>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="swiper-slide">
+                                    <div class="card">
+                                     
+                                      <div class="image">
+                                        <img src="../component/kamar3.jpg" alt="">
+                                      </div>
+                                      <div class="tentang">
+                                        <h4>Viana</h4>
+                                        <div class="desc">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                        </div>
+                                       <h4>Rp.450.000/day</h4>
+                                    </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="swiper-slide">
+                                    <div class="card">
+                                     
+                                      <div class="image">
+                                        <img src="../component/kamar4.jpg" alt="">
+                                      </div>
+                                      <div class="tentang">
+                                        <h4>Ciana</h4>
+                                        <div class="desc">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                        </div>
+                                       <h4>Rp.600.000/day</h4>
+                                    </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="swiper-slide">
+                                    <div class="card">
+                                     
+                                      <div class="image">
+                                        <img src="../component/kamar5.jpg" alt="">
+                                      </div>
+                                      <div class="tentang">
+                                        <h4>Liau</h4>
+                                        <div class="desc">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                        </div>
+                                       <h4>Rp.500.000/day</h4>
+                                    </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="swiper-slide">
+                                    <div class="card">
+                                     
+                                      <div class="image">
+                                        <img src="../component/kamar6.jpg" alt="">
+                                      </div>
+                                      <div class="tentang">
+                                        <h4>Klis</h4>
+                                        <div class="desc">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                        </div>
+                                       <h4>Rp.350.000/day</h4>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card">
+                                     
+                                      <div class="image">
+                                        <img src="../component/kamar7.jpg" alt="">
+                                      </div>
+                                      <div class="tentang">
+                                        <h4>Vileo</h4>
+                                        <div class="desc">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum atque tempore consequuntur? Enim, sequi qui. Delectus laudantium dolor porro repudiandae.</p>
+                                        </div>
+                                       <h4>Rp.550.000/day</h4>
+                                    </div>
+                                    </div>
+                                  </div>
+
+
+                                  
+
+                                  
+                            </div>
+                          </div>
+                        </div>
+                
+                    </div>
+
+                    <div class="kanan">
+                      <img src="../component/hotel3.jpg" alt="">
+                    </div>
+
+                 </div>
+                    
+                   
+                    
+
+                 
+            </div>
+        </section>
+
+        <section>
+          <div class="map">
+
+              <h5>LOKASI</h5>
+              <!-- lokasi -->
+              <iframe  class="peta"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11539.661167050508!2d98.67657092204422!3d3.592656624945293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1706245319766!5m2!1sid!2sid" width="600" height="450" style="border:0;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="contact" id="contact">
+            <div class="kiri">
+           <div class="hotelnama">
+            <h3>INDAH HOTEL</h3>
+            <img src="../component/hotellogo.png" alt="">
+           </div>
+           <p>Hubungi Kami</p>
+             <ul>
+              <li><span><i class="fa-brands fa-instagram"></i></span>indahhotel_1</li>
+              <li><span><i class="fa-brands fa-facebook"></i></span>Indah Hotel Medan</li>
+              <li><span><i class="fa-brands fa-google"></i></span>indahhotel@gmail.com</li>
+              <li><span><i class="fa-solid fa-address-book"></i></span>023-876-875</li>
+             </ul>
+            </div>
+            <div class="tengah">
+               <!-- <h5>Tim</h5> -->
+                <ul>
+                  <li>Indah Hotel</li>
+                  <li>Indah Apartemen</li>
+                  <li>Fast Food</li>
+                  <li>Nyenyak Bedroom</li>
+                  <li>Kolam Cahaya</li>
+                  <li>Delicious Food</li>
+                </ul>
+            </div>
+            <div class="kanan">
+              <h5>Contact Us</h5>
+              <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+          
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+          
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="keterangan">
+              <p>All Right Reserved 2024</p>
+          </div>
+        </section>
+
+
+      
+
+    </div>
+
+
+    <!-- script js -->
+    
+    <script>
+      $(document).ready(function(){
+        $(".counter").counterUp({
+          delay :10 ,
+          time :1200 
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body> 
+</html>

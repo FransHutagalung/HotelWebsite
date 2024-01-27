@@ -1,0 +1,555 @@
+section{
+  font-family: 'roboto', sans-serif;
+}
+h1{
+  font-size: 40px;
+}
+
+*{
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+}
+body{
+  background-color:  whitesmoke;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* height: 700px; */
+
+  overflow-x: hidden;
+  color: black;
+  background-color: white;
+  width: 100%;
+}
+.container{
+  /* width: 100%; */
+}
+.specific{
+  width: 96%;
+  height: 300px;
+  background-color: whitesmoke;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.specific .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid blue;
+
+}
+.specific .box span{
+  height: 100px;
+  width: 100px;
+  color: blue;
+  /* display: block; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.specific .box span i {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.specific .box  .counter{
+  height: 40px;
+  width: 100px;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px auto;
+  /* background-color: red; */
+  padding: 0;
+  margin: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  /* background: rgb(225,225,225 ,.1) ; */
+
+  background: rgba(255, 255, 255, 0.1); /* Set the background color with transparency */
+            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Add a subtle border for separation */
+
+            transition: background-color 0.3s ease;
+            color: blue;
+  position: fixed;
+  height: 40px;
+  top: 0;
+  width: 95%;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  margin:10px  auto;
+  margin-left: 35px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px 15px;
+  z-index: 19;
+}
+
+
+.header ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.header ul li{
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.header a {
+  float: left;
+  display: block;
+
+  height: 10px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: black;
+  font-weight: 700;
+}
+
+.home{
+  z-index: -1;
+  padding-top: 20px;
+  background-color: white;
+  height: 700px;
+  width: 100%;
+  
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0px 0px;
+  border-radius: 10px;
+  
+}
+.row .left{
+  height: 500px;
+  width: 35%;
+  background-color: white;
+  padding: 10px 25px ;
+  position: relative;
+  text-align: justify;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.look-service{
+  background-color: blue;
+  color: white;
+  height: 35px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 10px;
+  border: none;
+}
+.look-service a{
+  color: white;
+  text-decoration: none;
+}
+.look-service span{
+  display: inline-block;
+  margin-left: 10px;
+}
+.look-service:hover{
+  background-color: grey;
+  color: black;
+}
+.row .left .info{
+  width: 580px;
+  background-color: white;
+  height: 110px;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 2;
+  border-radius: 10px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.info div{
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+   width: 33%;
+   height: 100%;
+   padding: 20px;
+}
+.info div p{
+  font-size: 15px;
+}
+.info div h4{
+  font-size: 25px;
+  margin-top: 0px;
+}
+.row .right{
+  height: 500px;
+  width: 60%;
+  background-color: white;
+  position: relative;
+
+}
+.row .right .picture{
+  min-width: 90%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.row .right .picture img{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.about{
+  height: 700px;
+  width: 98%;
+  padding: 20px 150px;
+
+}
+
+.about .row{
+  width: 100%;
+  margin: 0 auto;
+  display:flex;
+  gap: 30px;
+  flex-direction:row;
+  position: relative;
+}
+
+.about .row .card-gambar{
+  width: 450px;
+  height:450px;
+  
+}
+
+.about .row .card-gambar img{
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+.row .card-information .paragraph{
+  margin-top: 20px;
+  width: 500px;
+  height: 280px;
+  border-radius: 10px;
+  opacity: 2;
+}
+.row .card-information{
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 10px 0px;
+  text-align: center;
+  /* width: 300px; */
+  height:400px;
+  text-align: justify;
+  width: 50%;
+}
+.row .card-information ul{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.row .card-information ul li{
+  font-size: 16px;
+  font-weight:600;
+   text-decoration: none;
+   list-style: none;
+   display: flex;
+   padding: 0px;
+   margin:17px 0;
+   flex-direction: row;
+   
+}
+.row .card-information ul li span{
+   color: green;
+   display: inline-block;
+   margin:0px 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 20px;
+   width: 20px;
+   border-radius: 10px;
+   border: 1px solid green;
+}
+.row .card-information h5{
+  top: 0;
+  font-size: 30px;
+  margin-top:0px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+.product{
+  height: 700px;
+  width: 96%;
+  margin: 0 auto;
+  padding: 10px 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+ .product .row .kiri{
+   height: 450px;
+   width:60%;
+   position: relative;
+   background-color: 	#d0d0d0;
+   padding: 10px 20px;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+ }
+ 
+ .product .row .kiri .swiper-container{
+  display: flex;
+  width: 600px;
+  height: 90%;
+  padding-left: 40px;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ }
+
+
+ .swiper-container .card {
+  position: relative;
+  background: #fff;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  padding: 0px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.swiper-container .card   .image {
+  width: 250px;
+  height: 150px;
+  padding: 3px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.swiper-container  .card  .tentang{
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  padding: 5px;
+  text-align: justify;
+}
+.swiper-container .card .tentang .desc{
+  /* background-color: red; */
+  height: 100px;
+}
+.tentang p{
+  font-size: 14px;
+}
+.tentang h4{
+  margin: 0px;
+
+}
+
+.card .image img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper {
+  margin: 0 auto;
+  cursor: grab;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .product .row .kanan{
+  height: 520px;
+  width: 40%;
+ }
+ .product .row .kanan img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+ }
+ .product .row .kiri .tombol{
+   height: 30px;
+   padding-left: 490px;
+   display: flex;
+   padding-top: 0px;
+   gap: 20px;
+ }
+ .product .row .kiri .tombol button{
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        width: 30px;
+        height: 20px;
+ }
+ .card-p{
+  height: 300px;
+  background-color: green;
+  width: 150px;
+ }
+ 
+
+.map{
+   height: 700px;
+   width: 1000px;
+   text-align: justify;
+   font-size: 20px;
+}
+.map h5{
+  margin: 20px 640px;
+}
+.map .peta{
+  width: 90%;
+  height: 450px;
+  margin: 20px 230px;
+  border-radius: 10px;
+}
+
+.contact{
+  width: 100%;
+  color: white;
+  background-color: #1e1e1e;
+  height: 300px;
+  padding: 20px 20px;
+  display: flex ;
+  margin-bottom: 0px;
+  align-items: center;
+
+
+}
+.contact > div{
+  height: 300px;
+  width: 33%;
+  font-family:Arial, Helvetica, sans-serif;
+
+  padding: 5px 10px;
+}
+.contact > div  >div{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;
+  align-items: center; */
+}
+.contact  .tengah{
+   padding:30px  80px;
+}
+.contact .kiri img{
+  height: 40px;
+  width: 40px;
+  margin: 8px;
+
+}
+
+.contact .kiri ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+.contact  ul li{
+  list-style: none;
+  padding-bottom: 20px;
+  font-weight: 100;
+  font-size: 16px;
+
+}
+.contact .kiri ul li span {
+  margin-right: 10px;
+}
+.contact .kanan{
+
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input, textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  height: 50px;
+}
+
+.contact button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #007bb5;
+}
+.keterangan{
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  color: white;
+  background-color: #1e1e1e;
+  height: 50px;
+  text-align: center;
+  font-size: 13px;
+  border: 2px solid #1e1e1e;
+}
+
+
+
